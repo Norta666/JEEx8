@@ -1,7 +1,7 @@
 <%-- 
     Document   : index.jsp
-    Created on : Aug 23, 2018, 3:35:07 PM
-    Author     : Chris.Cusack
+    Created on : Mar 5, 2022
+    Author     : Natasha Borzakovskaia
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
@@ -13,8 +13,8 @@
     </head>
     <body>
         <!--Set up the message to capture any errors-->
-       
-        <form action="" method="post">
+        <p>${error}</p>
+        <form action="EmailServlet" method="post">
             <input type="hidden" name="action" value="add" />
             <table>
                 <tr>
